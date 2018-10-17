@@ -7,9 +7,9 @@ class Appointment < ActiveRecord::Base
   end
 
   def time
-    self.appointment_datetime.strftime(""%k:%M")
+    self.appointment_datetime.strftime("%k:%M")
   end
-  
+
   def doctor_name
     self.doctor.name
   end
